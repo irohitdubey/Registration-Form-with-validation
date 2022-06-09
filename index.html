@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/93740f0106.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    
+<div class="container">
+    <div class="header">
+        <h2>Registration Form</h2>
+    </div>
+
+    <form name="myform" class="form" id="form">
+        <div class="form-control "  >
+            <lable>First Name</lable>
+            <input type="text" placeholder="First Name" id="firstname">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error massage</small>
+        </div>
+        <div class="form-control ">
+            <lable>Last Name</lable>
+            <input type="text" placeholder="Last Name" id="lastname">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error massage</small>
+        </div>
+        <div class="form-control">
+            <lable>Email</lable>
+            <input type="email" placeholder="Email" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error massage</small>
+        </div>
+        <div class="form-control">
+            <lable>Contact</lable>
+            <input type="text" placeholder="Contact" id="contact" >
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error massage</small>
+        </div>
+        <div >
+        <label>Gender:</label> 
+        <input type="radio" name="gender" value="male" required>Male
+        <input type="radio"name="gender"value="female">Female
+        <input type="radio"name="gender"value="others">Others</br></br>
+    </div>
+          <div >
+        <label>Interest:</label> 
+        <input type="checkbox" required>Reading Books
+        <input type="checkbox" >Watching Movies
+        <input type="checkbox">Others
+    </div></br>
+    <div >
+        <label>Location:</label>
+        <select name="" id="">
+            <option value="rohini">Rohini</option>
+            <option value="new delhi">New Delhi</option>
+            <option value="noida">Noida</option>
+            <option value="gurugram">Gurugram</option>
+        </select>
+    </div></br>
+    <div>
+        About:
+    <p>
+        <textarea  id="myText" cols="40" rows="3" maxlength="100" required></textarea>
+    </p>
+    <h4> 
+        You have entered <span id="charCount" style="color:red">0</span> charecters !
+    </h4>
+    
+</div>
+    <button>Submit</button>
+    </form>
+</div>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
